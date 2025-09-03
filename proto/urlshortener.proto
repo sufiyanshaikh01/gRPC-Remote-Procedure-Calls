@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package urlshortener.v1;
+option go_package = "github.com/yourname/urlshortener/gen;gen";
+
+message URL {
+  string id = 1;
+  string original_url = 2;
+  string short_url = 3;
+  int64  creation_unix = 4;
+}
+
+message ShortenRequest {
+  string original_url = 1;
+}
+
+message ShortenResponse {
+  URL url = 1;
+}
+
+message ResolveRequest {
+  string id = 1;
+}
+
+message ResolveResponse {
+  URL url = 1;
+}
+
+service URLShortener {
+  rpc Shorten(ShortenRequest) returns (ShortenResponse);
+  rpc Resolve(ResolveRequest) returns (ResolveResponse);
+}
