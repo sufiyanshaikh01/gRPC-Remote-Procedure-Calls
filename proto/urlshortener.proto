@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package urlshortener.v1;
-option go_package = "github.com/yourname/urlshortener/gen;gen";
+option go_package = "github.com/sufiyanshaikh01/urlshortener/gen;gen";
 
 message URL {
   string id = 1;
