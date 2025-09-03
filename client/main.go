@@ -6,7 +6,7 @@ import (
 	"log"
 	"time"
 
-	pb "github.com/yourname/urlshortener/gen"
+	pb "github.com/sufiyanshaikh01/urlshortener/gen"
 	"google.golang.org/grpc"
 )
 
