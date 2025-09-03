@@ -3,6 +3,7 @@ syntax = "proto3";
 package urlshortener.v1;
 option go_package = "github.com/sufiyanshaikh01/urlshortener/gen;gen";
 
+
 message URL {
   string id = 1;
   string original_url = 2;
