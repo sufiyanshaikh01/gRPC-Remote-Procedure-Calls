@@ -11,7 +11,7 @@ import (
 	"sync"
 	"time"
 
-	pb "github.com/sufiyanshaikh01/urlshortener/gen" // <-- update with your module path
+	pb "github.com/sufiyanshaikh01/gRPC-Remote-Procedure-Calls/gen" // <-- update with your module path
 	"google.golang.org/grpc"
 )
 
