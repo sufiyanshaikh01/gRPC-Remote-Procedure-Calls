@@ -11,8 +11,8 @@ import (
 	"sync"
 	"time"
 
+	pb "github.com/sufiyanshaikh01/urlshortener/gen" // <-- update with your module path
 	"google.golang.org/grpc"
-	pb "github.com/yourname/urlshortener/gen" // <-- update with your module path
 )
 
 // URL model (similar to your old struct)
