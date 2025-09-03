@@ -62,7 +62,7 @@ gen/ <br>
 
 - Easier to add new fields/methods without breaking compatibility <br>
 
-# Generate gRPC code <br>
+# - Generate gRPC code <br>
 
 - From the project root, run: <br>
 
@@ -70,12 +70,12 @@ protoc --go_out=. --go-grpc_out=. proto/urlshortener.proto <br>
 
 - This will generate files inside gen/. <br>
 
-# 3. Run the server <br>
+# - Run the server <br>
 go run ./server <br>
 
 - Server will start on :50051. <br>
 
-# 4. Run the client <br>
+# - Run the client <br>
 
 - In another terminal: <br>
 
